@@ -1,0 +1,155 @@
+---
+title: "HLa001_Study_view_from_window"
+author: "Hanneke"
+date: "`r Sys.Date()`"
+engine: knitr
+format: 
+  html:
+    self-contained: true
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    df-print: kable
+---
+
+## Template Used
+
+LACDR-ISA - Assay (General) v1.0.0
+
+## Title
+
+`r rmarkdown::metadata$title`
+
+## Date (dd-MM-yyyy)
+
+`r format(Sys.time(), format = "%d-%m-%Y")`
+
+## Description or Purpose
+
+To calculate statistics on what I see outside of my window
+
+### Background
+
+I needed an example for this tutorial and was staring out of my window, so that is what I chose.
+
+### Data sources
+
+A table of objects that I counted. Data stored in data/raw_data/20230502_HLa001_things_I_see_from_my_window.csv
+
+### Analysis plan
+
+1.  Explore the data
+2.  Plot the data
+3.  Save the results
+
+## Results
+
+### 0. Preparations
+
+#### Load R libraries
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+#### Set input and output directories
+
+Print where the script was run from:
+
+```{r}
+here::here()
+```
+
+Set input data directory.
+
+```{r}
+data_dir <- here("Tutorial_2_using_LACDR-ISA/data/raw_data")
+str_glue("Using data from {data_dir}")
+stopifnot(dir.exists(data_dir))
+```
+
+Set output data directory and create if it does not exist.
+
+```{r}
+datestamp <- str_remove_all(Sys.Date(), "-")
+output_dir <- here("Tutorial_2_using_LACDR-ISA/results", str_glue("HLa001_{datestamp}_output"))
+if(!dir.exists(output_dir)) dir.create(output_dir)
+str_glue("Output directory path is {output_dir}")
+```
+
+#### Define functions
+
+```{r}
+source(here("Tutorial_2_using_LACDR-ISA/code/functions/example_function.R"))
+```
+
+### 1. Load data
+
+```{r}
+object_info <- read_csv(here(data_dir, "20230502_HLa001_things_I_see_from_my_window.csv"))
+str(object_info)
+dim(object_info)
+head(object_info)
+```
+
+Data looks ok.
+
+### 2. Get information on all cars
+
+```{r}
+filter(object_info, object == "car")
+```
+
+So I see three car colors, and I think 10 in total, but let's count.
+
+```{r}
+object_info %>%
+  group_by(object) %>%
+  summarise(sum = sum(amount))
+```
+
+### 3. Plot the amount of objects
+
+```{r}
+p1 <- object_info %>%
+  ggplot(aes(x = object, y = amount, fill = color)) +
+  geom_col() +
+  theme_bw()
+p1
+```
+
+I clearly see a lot of cars and trees.
+
+#### Save plot
+
+```{r}
+ggsave(here(output_dir, "bar_plot_with_info_on_views.png"), p1)
+```
+
+### 4. Count to three
+
+To see if I can source and use functions:
+
+```{r}
+count_to_three()
+# Creating an error here to make sure you cannot reproduce the analysis.
+# Delete the line below.
+1 + 2 + "three"
+```
+
+## Conclusion
+
+Plots were generated and saved. I saw a lot of trees and cars.
+
+### Doubts and limitations
+
+I did not get the colors in the plot the way I want. Redo tomorrow?
+
+### Future assays
+
+Maybe study if I also saw birds.
+
+```{r}
+sessionInfo()
+```
