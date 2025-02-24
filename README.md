@@ -56,15 +56,13 @@ After this tutorial, you will be able to:
 
 -   Upload and download metadata to and from an RSpace lab journal entry using [rspacer](https://burgerga.github.io/rspacer).
 
-The functionality already exists, but we have not yet written the tutorial.
-For now, read the Help pages and the vignette of: `rspacer::folder_tree`, `rspacer::document_list_attachments` and `rspacer::file_download`.
+The functionality already exists, but we have not yet written the tutorial. For now, read the Help pages and the vignette of: `rspacer::folder_tree`, `rspacer::document_list_attachments` and `rspacer::file_download`.
 
 ### Tutorial 6 - add attachments to an existing document
 
 After this tutorial, you will be able to: - Upload and download metadata as attachment to an RSpace document using [rspacer](https://burgerga.github.io/rspacer).
 
-The functionality is in development.
-For now, use `rspacer::file_upload` to upload the attachments to the RSpace Gallery, and add them manually.
+The functionality is in development. For now, use `rspacer::file_upload` to upload the attachments to the RSpace Gallery, and add them manually.
 
 ### Tutorial 7 - append information to an assay 1.
 
