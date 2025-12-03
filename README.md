@@ -2,6 +2,8 @@
 
 Materials and instructions for workshops on how to use rspacer and LACDR-ISA templates.
 
+Feel free to help us improve these materials, we are very happy with any suggestions. You can reach us by either submitting an issue or directly fix a problem using a pull request.
+
 ## Introduction
 
 This repository contains materials and instructions for workshops on how to use rspacer and LACDR-ISA templates in combination with RSpace.
