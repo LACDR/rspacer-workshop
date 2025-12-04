@@ -8,7 +8,7 @@ Feel free to help us improve these materials, we are very happy with any suggest
 
 This repository contains materials and instructions for workshops on how to use rspacer and LACDR-ISA templates in combination with RSpace.
 
-At the point of writing, the workshops are step by step guides with example documents, and are meant as LACDR-specific extensions to the tutorials on the [rspacer website](https://burgerga.github.io/rspacer/articles/), and instructions on the [LACDR-ISA](https://github.com/LACDR/LACDR.ISA) package page.
+At the point of writing, the workshops are step by step guides with example documents, and are meant as LACDR-specific extensions to the tutorials on the [rspacer website](https://lacdr.github.io/rspacer/articles/), and instructions on the [LACDR-ISA](https://github.com/LACDR/LACDR.ISA) package page.
 
 Soon, this workshop repository will be part of a nice manuscript!
 
@@ -42,13 +42,13 @@ After this tutorial, you will be able to:
 
 After this tutorial, you will be able to:
 
--   Upload a rendered Quarto report as an RSpace Document using [rspacer](https://burgerga.github.io/rspacer).
+-   Upload a rendered Quarto report as an RSpace Document using [rspacer](https://lacdr.github.io/rspacer).
 
 ### Tutorial 4 - document from Excel
 
 After this tutorial, you will be able to:
 
--   Upload information from Excel, CSV or TSV files to specific fields in an RSpace Document using [rspacer](https://burgerga.github.io/rspacer).
+-   Upload information from Excel, CSV or TSV files to specific fields in an RSpace Document using [rspacer](https://lacdr.github.io/rspacer).
 
 ## Future tutorials to be written
 
@@ -56,13 +56,13 @@ After this tutorial, you will be able to:
 
 After this tutorial, you will be able to:
 
--   Upload and download metadata to and from an RSpace lab journal entry using [rspacer](https://burgerga.github.io/rspacer).
+-   Upload and download metadata to and from an RSpace lab journal entry using [rspacer](https://lacdr.github.io/rspacer).
 
 The functionality already exists, but we have not yet written the tutorial. For now, read the Help pages and the vignette of: `rspacer::folder_tree`, `rspacer::document_list_attachments` and `rspacer::file_download`.
 
 ### Tutorial 6 - add attachments to an existing document
 
-After this tutorial, you will be able to: - Upload and download metadata as attachment to an RSpace document using [rspacer](https://burgerga.github.io/rspacer).
+After this tutorial, you will be able to: - Upload and download metadata as attachment to an RSpace document using [rspacer](https://lacdr.github.io/rspacer).
 
 The functionality is in development. For now, use `rspacer::file_upload` to upload the attachments to the RSpace Gallery, and add them manually.
 
