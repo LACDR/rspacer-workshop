@@ -8,6 +8,8 @@ Contributions and suggestions are welcome. Please open an issue or submit a pull
 
 ---
 
+Feel free to help us improve these materials, we are very happy with any suggestions. You can reach us by either submitting an issue or directly fix a problem using a pull request.
+
 ## Introduction
 
 This repository contains materials and instructions for workshops on using rspacer and LACDR-ISA templates together with RSpace.
