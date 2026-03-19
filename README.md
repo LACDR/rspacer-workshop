@@ -1,10 +1,16 @@
 # Workshop rspacer
 
-Materials and instructions for workshops on how to use rspacer and LACDR-ISA templates.
+Materials and instructions for workshops on using rspacer together with RSpace and LACDR-ISA templates.
+
+These tutorials demonstrate how R can be used to generate structured reports and automatically upload these to an RSpace electronic lab notebook (ELN).
+
+Contributions and suggestions are welcome. Please open an issue or submit a pull request if you notice problems or have improvements.
+
+---
 
 ## Introduction
 
-This repository contains materials and instructions for workshops on how to use rspacer and LACDR-ISA templates in combination with RSpace.
+This repository contains materials and instructions for workshops on using rspacer and LACDR-ISA templates together with RSpace.
 
 At the point of writing, the workshops are step by step guides with example documents, 
 and are meant as LACDR-specific extensions to the tutorials on the [rspacer website](https://lacdr.github.io/rspacer/articles/), 
@@ -22,37 +28,38 @@ You can also find our preprint [here](https://lacdr.github.io/rspacer-manuscript
 
 ## Tutorial details
 
-### Tutorial 1 - using R projects
+### Tutorial 1 - Using R Projects
 
 After this tutorial, you will be able to:
 
 -   Explain how an R project can make your research more reproducible
 -   Set up your own R project in RStudio
 
-### Tutorial 2 - using LACDR-ISA Quarto and Excel templates
+### Tutorial 2 - Using LACDR-ISA Quarto and Excel templates
 
 After this tutorial, you will be able to:
 
--   Explain why using templates can benefit your research
--   Apply the Investigation-Study-Assay structure to your own research projects
--   Use LACDR-ISA Templates in RStudio and in Excel
--   Adapt the LACDR-ISA Template to your own research needs
+-   Explain the benefits of using structured templates
+-   Apply the Investigation-Study-Assay (ISA) structure to your own research projects
+-   Use LACDR-ISA Templates in both RStudio and Excel
+-   Adapt the LACDR-ISA Templates to your own research needs
 
-### Tutorial 3 - document from HTML
+### Tutorial 3 - Document from HTML
 
 After this tutorial, you will be able to:
 
+- 	Generate a Quarto report
 -   Upload a rendered Quarto HTML report as an RSpace Document using [rspacer](https://lacdr.github.io/rspacer).
 
-### Tutorial 4 - document from Excel
+### Tutorial 4 - Document from Excel
 
 After this tutorial, you will be able to:
 
 -   Upload information from Excel, CSV or TSV files to specific fields in an RSpace Document using [rspacer](https://lacdr.github.io/rspacer).
 
-## Future tutorials to be written
+## Tutorials to be written
 
-### Tutorial 5 - reuse data from RSpace
+### Tutorial 5 - Reusing data from RSpace
 
 After this tutorial, you will be able to:
 
@@ -62,7 +69,7 @@ After this tutorial, you will be able to:
 
 The functionality already exists, but we have not yet written the tutorial. For now, read the Help pages and the vignette of: `rspacer::folder_tree`, `rspacer::document_list_attachments` and `rspacer::file_download`.
 
-### Tutorial 6 - add attachments to an existing document
+### Tutorial 6 - Add attachments to an existing document
 
 After this tutorial, you will be able to:
 
@@ -78,6 +85,7 @@ After this tutorial, you will be able to:
 
 Requirements: you need to have R Studio and R installed, and you need an account on RSpace.
 
-1.  Clone or download this git repository.
-2.  Go to the folder with files you just created.
-3.  Go to the folders and click on the Tutorial.md file or read the pdf version.
+1.  Clone or download this repository
+2.  Open the repository as an RStudio project
+3.  Navigate to a tutorial folder
+4.  Open the `Tutorial_X.md` file
