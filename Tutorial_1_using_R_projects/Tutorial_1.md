@@ -18,10 +18,14 @@ You can find the answers at the bottom of this page.
 ### Materials to learn about R projects
 
 Many folder structures have been suggested to use.
-If you want, you can take a look at these resources.
-In Tutorial 2, we will set up an ISA structure together with your own R project!
+If you want, you can take a look at these resources:
 
-TODO add some nice blogs
+-    Schnell, S. (2015). Ten Simple Rules for a Computational Biologist’s Laboratory Notebook. PLOS Computational Biology, 11(9), e1004385. https://doi.org/10.1371/journal.pcbi.1004385
+-    Folder structure. RDM Guide. Elixir Belgium https://rdm.elixir-belgium.org/folder_structure
+-    Folder Structure. The Graduate Institute Geneva https://libguides.graduateinstitute.ch/rdm/folders.
+-    Folder/data organisation. Ghent University https://www.ugent.be/en/research/datamanagement/during-research/collection.htm#Folder/dataorganization.
+
+In Tutorial 2, we will set up an ISA structure in your own R project!
 
 ### Absolute and relative file paths
 

@@ -13,7 +13,7 @@ Templates are standardized documents where you can put information in. Here we w
 
 ## What is the Investigation-Study-Assay format?
 
-TODO add link to Gerhard's RDM bible.
+For more information, see the [ISAtools website](https://isa-tools.org/).
 
 ## Install and use LACDR-ISA Quarto templates
 
