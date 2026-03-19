@@ -7,13 +7,21 @@ After this tutorial, you will be able to:
 -   Use LACDR-ISA Templates in RStudio and in Excel
 -   Adapt the LACDR-ISA Template to your own research needs
 
-## Why use templates?
+## Why use structured templates?
 
 Templates are standardized documents where you can put information in. Here we will show some flexible templates, but many more specific templates exist. Especially when metadata is needed for further analysis, it is recommended to collect the metadata, for example cell line names, in a standardized form, file, document, or column. Templates can speed up your own research, but also help to find information back later.
 
 ## What is the Investigation-Study-Assay format?
 
-TODO add link to Gerhard's RDM bible.
+The **ISA framework** organizes metadata into three levels:
+
+| Level         | Description                         |
+|---------------|-------------------------------------|
+| Investigation | overall research project            |
+| Study         | individual study within the project |
+| Assay         | specific experiment                 |
+
+For more information, see the [ISAtools website](https://isa-tools.org/).
 
 ## Install and use LACDR-ISA Quarto templates
 
